@@ -1,0 +1,21 @@
+.venv/
+__pycashe__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/
+data/processed/
+
+# Models
+models/*.pk1
+models/*.joblib
+
+# Environment variables
+.env
+
+# OS / IDE
+.DS_Store
+.vscode/
