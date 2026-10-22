@@ -84,29 +84,21 @@ Clone the repository from GitHub and navigate to the project directory.
 
 Create a virtual environment:
 
-```powershell
 python -m venv .venv
-```
 
 Activate the virtual environment (Windows PowerShell):
 
-```powershell
 .\.venv\Scripts\Activate.ps1
-```
 
 Install the required dependencies:
 
-```powershell
 python -m pip install -r requirements.txt
-```
 
 ### 3. Prepare the Dataset
 
 Download the Telco Customer Churn dataset and place the CSV file in the following directory:
 
-```text
 data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
-```
 
 The dataset is not included in the GitHub repository and must be downloaded separately.
 
@@ -114,49 +106,36 @@ The dataset is not included in the GitHub repository and must be downloaded sepa
 
 Run the model training script:
 
-```powershell
 python -m src.models.train
-```
 
 This command validates and cleans the dataset, trains the logistic regression pipeline, and saves the trained model to:
 
-```text
 models/churn_logistic_regression.joblib
-```
 
 ### 5. Generate a Retention Campaign
 
 Generate a retention campaign using a $2,000 budget:
 
-```powershell
 python -m src.retention.run_campaign --budget 2000
-```
 
 The platform ranks customers by modeled expected net value, selects eligible customers within the budget, and exports the results to:
 
-```text
 data/processed/retention_campaign.csv
-```
 
 To use a different budget or output filename:
 
-```powershell
 python -m src.retention.run_campaign --budget 500 --output data/processed/campaign_500.csv
-```
 
 ### 6. Run Automated Tests
 
 Verify the project's functionality using pytest:
 
-```powershell
 python -m pytest -q
-```
 
 At the time of development, the project contains 52 passing automated tests covering data validation, preprocessing, prediction, retention recommendations, model training, and campaign generation.
 
 ## Project Structure
 
-```text
 customer-retention-intelligence/
 ├── data/
 │   ├── raw/             # Original Telco Customer Churn dataset
