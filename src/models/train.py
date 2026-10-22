@@ -71,6 +71,17 @@ def train_churn_model():
     average_precision = average_precision_score(y_test, y_proba)
     cm = confusion_matrix(y_test, y_pred)
 
+    print("\nModel Evaluation")
+    print("-" * 30)
+    print(f"Accuracy:          {accuracy:.4f}")
+    print(f"Precision:         {precision:.4f}")
+    print(f"Recall:            {recall:.4f}")
+    print(f"F1 Score:          {f1:.4f}")
+    print(f"ROC-AUC:           {roc_auc:.4f}")
+    print(f"Average Precision: {average_precision:.4f}")
+    print("\nConfusion Matrix:")
+    print(cm)
+
     model_dir = project_root / "models"
     model_dir.mkdir(parents=True, exist_ok=True)
 
@@ -83,4 +94,3 @@ def train_churn_model():
 
 if __name__ == "__main__":
     train_churn_model()
-
