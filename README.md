@@ -28,6 +28,22 @@ Before model training, numerical features were standardized using StandardScaler
 
 The dataset was divided into training (80%) and testing (20%) subsets using a stratified split to preserve the original churn distribution.
 
+### Dataset Source
+
+This project uses the [Telco Customer Churn dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn), originally associated with IBM's customer churn sample data.
+
+The dataset contains 7,043 customer records and 21 columns, including customer demographics, account information, service subscriptions, and churn status.
+
+The raw dataset is not included in this repository. To reproduce the project:
+
+1. Download the dataset from the link above.
+2. Extract the CSV file.
+3. Place the file at the following location:
+
+   `data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv`
+
+The model training and retention campaign scripts expect the dataset at this location.
+
 ## Model Performance
 
 The logistic regression model achieved an accuracy of 80.55%, a precision of 65.72%, and a recall of 55.88% on the test dataset. It also achieved an ROC-AUC score of 0.8420, demonstrating its ability to distinguish between customers who churned and those who remained.
