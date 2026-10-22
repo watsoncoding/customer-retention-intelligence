@@ -1,0 +1,47 @@
+feature,coefficient
+cat__Contract_Month-to-month,0.6509355311373153
+cat__InternetService_Fiber optic,0.6089322466635486
+num__TotalCharges,0.5018312586946956
+cat__StreamingTV_Yes,0.20700213945485696
+cat__StreamingMovies_Yes,0.1768754795855423
+cat__OnlineSecurity_No,0.16556312880826166
+cat__TechSupport_No,0.15231421032839743
+cat__PaymentMethod_Electronic check,0.14859405184860444
+cat__MultipleLines_Yes,0.10907162491134291
+cat__OnlineBackup_No,0.04708950400650094
+cat__DeviceProtection_Yes,0.008263042048934246
+cat__PaperlessBilling_Yes,0.005434617085375116
+cat__Dependents_No,-0.014112874730554777
+cat__DeviceProtection_No,-0.01950835219111163
+cat__OnlineBackup_Yes,-0.05833481414867547
+cat__SeniorCitizen_1,-0.0658848045565021
+cat__Contract_One year,-0.07158858717493059
+cat__PaymentMethod_Mailed check,-0.08390055206600368
+cat__PhoneService_No,-0.09199628633327048
+cat__MultipleLines_No phone service,-0.09199628633327048
+cat__gender_Female,-0.12224963916391719
+cat__Partner_Yes,-0.134798177959314
+cat__Partner_No,-0.14410104745065286
+cat__PaymentMethod_Bank transfer (automatic),-0.15028435868906026
+cat__gender_Male,-0.15664958624607142
+cat__TechSupport_Yes,-0.16355952047056815
+cat__OnlineSecurity_Yes,-0.1768084389504303
+cat__PhoneService_Yes,-0.1869029390766845
+cat__StreamingMovies_No,-0.18812078972770918
+cat__PaymentMethod_Credit card (automatic),-0.1933083665035055
+cat__SeniorCitizen_0,-0.21301442085345496
+cat__StreamingTV_No,-0.21824744959702705
+cat__Dependents_Yes,-0.2647863506794091
+cat__OnlineBackup_No internet service,-0.26765391526779686
+cat__StreamingMovies_No internet service,-0.26765391526779686
+cat__TechSupport_No internet service,-0.26765391526779686
+cat__OnlineSecurity_No internet service,-0.26765391526779686
+cat__InternetService_No,-0.26765391526779686
+cat__StreamingTV_No internet service,-0.26765391526779686
+cat__DeviceProtection_No internet service,-0.26765391526779686
+cat__PaperlessBilling_No,-0.28433384249534327
+cat__MultipleLines_No,-0.2959745639880287
+num__MonthlyCharges,-0.48627328545560305
+cat__InternetService_DSL,-0.6201775568057218
+cat__Contract_Two year,-0.8582461693723449
+num__tenure,-1.2133120922565446

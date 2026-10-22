@@ -1,21 +1,28 @@
+# Python environments
 .venv/
-__pycashe__/
-*.pyc
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
+# Environment variables and secrets
+.env
+.env.*
+
+# Raw and generated data
 data/raw/
 data/processed/
 
-# Models
-models/*.pk1
+# Serialized models
+models/*.pkl
 models/*.joblib
-
-# Environment variables
-.env
 
 # OS / IDE
 .DS_Store
+Thumbs.db
 .vscode/
